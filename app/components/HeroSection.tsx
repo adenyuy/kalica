@@ -29,6 +29,12 @@ export default function HeroSection() {
             Faisal Rahman
           </h2>
         </div>
+
+        <div className="mt-12 bg-white brutal-border brutal-shadow-sm inline-block px-6 py-2 rotate-3">
+          <h3 className="text-2xl md:text-3xl font-black text-pink-600">
+            #BungaUntukFaisal
+          </h3>
+        </div>
       </motion.div>
 
       <motion.div
