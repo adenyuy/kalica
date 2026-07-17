@@ -5,8 +5,8 @@ import { motion } from "framer-motion";
 
 export default function WishesSection() {
   const [wishes, setWishes] = useState([
-    { name: "John Doe", message: "Selamat menempuh hidup baru! Jangan lupa traktiran." },
-    { name: "Jane Smith", message: "Semoga samawa dan cepet dapet momongan! ✨" }
+    { name: "Marvin dan Najma", message: "Selamat menempuh hidup baru! Semoga lancar sampai hari H dan bahagia selalu ya. 🌸" },
+    { name: "SipilSore22", message: "Wahhh akhirnya nyusul juga! Sakinah mawaddah warahmah ya Kalica & Faisal! 🥳" }
   ]);
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
