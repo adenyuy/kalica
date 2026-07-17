@@ -41,9 +41,21 @@ export default function InvitationSection({ isOpened, setIsOpened }: InvitationS
               initial={{ opacity: 0, height: 0, scale: 0.8 }}
               animate={{ opacity: 1, height: "auto", scale: 1 }}
               exit={{ opacity: 0, height: 0, scale: 0.8 }}
-              className="mt-8 bg-white text-slate-900 p-8 brutal-border brutal-shadow text-left"
+              className="mt-8 bg-white text-slate-900 p-8 brutal-border brutal-shadow text-left relative"
             >
-              <h3 className="text-3xl font-black mb-4 text-pink-500">Dear Friends & Family,</h3>
+              {/* Stamp Hashtag */}
+              <motion.div 
+                initial={{ scale: 5, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                transition={{ delay: 0.4, type: "spring", stiffness: 300, damping: 15 }}
+                className="absolute -top-6 -right-4 md:-top-8 md:-right-8 bg-white brutal-border brutal-shadow px-4 py-2 rotate-12 border-4 border-red-600 z-20"
+              >
+                <h3 className="text-lg md:text-2xl font-black text-red-600 uppercase tracking-wider">
+                  #BungaUntukFaisal
+                </h3>
+              </motion.div>
+
+              <h3 className="text-3xl font-black mb-4 text-pink-500 mt-4 md:mt-0">Dear Friends & Family,</h3>
               <p className="text-xl font-medium leading-relaxed mb-4">
                 We're throwing a massive party to celebrate our love, and you better be there! There will be food, music, dancing, and probably some embarrassing moments.
               </p>
